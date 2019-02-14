@@ -162,14 +162,12 @@ article.post .post-meta {
   font-weight: 700;
   font-style: italic;
   font-size: 3vw;
+  text-transform: uppercase;
+  text-align: center;
   position: relative;
   border-top: 2px solid #F7ACCF;
   border-radius: 2px;
   padding-top: 4em; }
-  article.post .post-meta text {
-    -webkit-transform: uppercase;
-            transform: uppercase;
-    align: center; }
   @media (min-width: 600px) {
     article.post .post-meta {
       text-align: right;
@@ -185,14 +183,12 @@ article.post avatar {
   position: absolute;
   top: 0;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%); }
   article.post avatar img {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     max-width: 94%;
     border-radius: 50%; }
   @media (min-width: 600px) {
@@ -201,8 +197,7 @@ article.post avatar {
       height: 60px;
       border-radius: 30px;
       left: 0;
-      -webkit-transform: translate(0, -50%);
-              transform: translate(0, -50%); } }
+      transform: translate(0, -50%); } }
 
 article.post .post-meta a {
   text-decoration: none; }
@@ -330,5 +325,3 @@ footer {
 
 .kg-gallery-image {
   display: inherit; }
-
-/*# sourceMappingURL=main.css.map */
