@@ -22,7 +22,7 @@
     "dev": "npm run css:watch & npm run js:watch",
     "build": "npm run predev",
     "prezip": "npm run build",
-    "zip": "mkdir -p ./dist & git archive -o ./dist/minnie.zip HEAD",
+    "zip": "mkdir -p ./dist & git archive -o ./dist/barebones.zip HEAD",
     "test": "gscan .",
     "sweepmac": "echo \"Removing DS_Store files\" & find . -name '.DS_Store' -type f -delete"
   },
