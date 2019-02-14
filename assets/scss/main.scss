@@ -1,0 +1,20 @@
+$breaks: (med: 600px, large: 900px);
+
+@import "global";
+@import "sitehead";
+@import "mn";
+@import "intro";
+@import "latest";
+@import "loop";
+@import "post";
+@import "footer";
+
+.grid {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@import "kg";

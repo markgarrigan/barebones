@@ -1,0 +1,28 @@
+{{!< default}}
+
+<div class="home">
+  {{> "post-head"}}
+</div>
+
+{{#post}}
+
+  <article class="grid {{post_class}}">
+    <header class="post-header">
+      <h2 class="post-title">
+        {{{title}}}
+      </h2>
+      <div class="post-meta">
+        {{#if primary_author.profile_image}}
+          <avatar>
+            <img src="{{primary_author.profile_image}}" alt="{{primary_author.name}}" />
+          </avatar>
+        {{/if}}
+        {{primary_author.name}} <i>/</i> {{date format="MMMM DD, YYYY"}}
+      </div>
+    </header>
+    <div class="post-content grid">
+      {{content}}
+    </div>
+  </article>
+
+{{/post}}

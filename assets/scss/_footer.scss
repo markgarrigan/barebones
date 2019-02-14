@@ -1,0 +1,20 @@
+footer {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3vw;
+  color: #b0afb5;
+  margin-top: 8vh;
+  margin-bottom: 4vh;
+
+  strong {
+    color: #1f0f19;
+  }
+
+  @media(min-width: map-get($breaks, 'med')) {
+    font-size: 2vw;
+  }
+
+  @media(min-width: map-get($breaks, 'large')) {
+    font-size: 1rem;
+  }
+}

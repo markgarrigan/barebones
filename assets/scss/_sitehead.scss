@@ -1,0 +1,50 @@
+@import "nav";
+
+.home {
+  margin-bottom: 6vw;
+
+  header {
+    background-color: #210c19;
+
+    & > div {
+      text-align: center;
+      padding: 5vw 20px 7vw;
+
+      h1 {
+        color: white;
+        font: {
+          family: 'Roboto', sans-serif;
+          size: 9vw;
+          weight: 900;
+        }
+        letter-spacing: .05em;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        @media(min-width: map-get($breaks, 'large')) {
+          font-size: 5rem;
+        }
+      }
+
+      p {
+        color: #fad635;
+        font: {
+          family: 'Alegreya', serif;
+          size: 4vw;
+          weight: 400;
+        }
+        margin-top: 0;
+        margin-bottom: 0;
+
+        @media(min-width: map-get($breaks, 'med')) {
+          font-size: 2vw;
+        }
+
+        @media(min-width: map-get($breaks, 'large')) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

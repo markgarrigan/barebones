@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f5f4f9;
+}
+
+a {
+  color: #6874E8;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+}

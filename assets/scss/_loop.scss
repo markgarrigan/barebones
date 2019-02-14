@@ -1,0 +1,48 @@
+.listed {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  grid-column: 3 / span 20;
+
+  li {
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #e28bc2;
+
+    &:first-child {
+      border-top: 1px solid #e28bc2;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      padding: 15px 7px;
+      font-family: 'Roboto', sans-serif;
+      color: #210c19;
+
+      &:hover,
+      &:focus {
+        background-color: rgba(0,0,0,.04);
+      }
+
+      img {
+        width: 100%;
+        max-width: 40px;
+        border-radius: 50%;
+        border: 2px solid #F7ACCF;
+      }
+
+      span {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  @media(min-width: map-get($breaks, 'med')) {
+
+  }
+
+  @media(min-width: map-get($breaks, 'large')) {
+    grid-column: 5 / span 16;
+  }
+}

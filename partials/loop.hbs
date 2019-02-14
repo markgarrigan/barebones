@@ -1,0 +1,12 @@
+<ul class="listed">
+	{{#foreach posts}}
+		<li>
+			<a href="{{url}}">
+				<img src="{{primary_author.profile_image}}" alt="{{primary_author.name}}" />
+				<span>
+					{{{title}}}
+				</span>
+			</a>
+		</li>
+	{{/foreach}}
+</ul>

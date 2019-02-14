@@ -1,0 +1,21 @@
+.latest {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+
+  h2 {
+    color: #1f0f19;
+    grid-column: 3 / span 20;
+
+    @media(min-width: map-get($breaks, 'med')) {
+
+    }
+
+    @media(min-width: map-get($breaks, 'large')) {
+      grid-column: 5 / span 16;
+    }
+  }
+
+  @media(min-width: map-get($breaks, 'med')) {
+
+  }
+}

@@ -1,0 +1,50 @@
+nav {
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 72px;
+
+  a {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+    & > img,
+    & > svg {
+      width: 32px;
+    }
+
+    &:not(.logo) {
+      justify-content: flex-end;
+    }
+
+    &.logo {
+      font-weight: 700;
+      font-size: 20px;
+      color: #f5f4f9;
+
+      svg {
+        height: 32px;
+      }
+
+      .msvg {
+        fill: #fad635;
+      }
+
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  @media(min-width: map-get($breaks, 'large')) {
+    grid-template-columns: repeat(24, 1fr);
+
+    div:first-child {
+      grid-column: 4 / span 10;
+    }
+
+    div:last-child {
+      grid-column: 18 / span 4;
+    }
+  }
+}
