@@ -21,14 +21,17 @@ nav {
   display: grid;
   grid-template-columns: 1fr 72px; }
   nav a {
+    display: -webkit-box;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
     padding: 20px; }
     nav a > img,
     nav a > svg {
       width: 32px; }
     nav a:not(.logo) {
-      justify-content: flex-end; }
+      -webkit-box-pack: end;
+              justify-content: flex-end; }
     nav a.logo {
       font-weight: 700;
       font-size: 20px;
@@ -129,8 +132,10 @@ intro {
     .listed li:first-child {
       border-top: 1px solid #e28bc2; }
     .listed li a {
+      display: -webkit-box;
       display: flex;
-      align-items: center;
+      -webkit-box-align: center;
+              align-items: center;
       padding: 15px 7px;
       font-family: 'Roboto', sans-serif;
       color: #210c19; }
@@ -327,6 +332,36 @@ footer {
   display: inherit; }
 
 .kg-gallery-image {
+  display: inherit; }
+
+.kg-bookmark-card {
+  display: inherit; }
+
+.kg-bookmark-container {
+  display: inherit; }
+
+.kg-bookmark-content {
+  display: inherit; }
+
+.kg-bookmark-title {
+  display: inherit; }
+
+.kg-bookmark-description {
+  display: inherit; }
+
+.kg-bookmark-metadata {
+  display: inherit; }
+
+.kg-bookmark-icon {
+  display: inherit; }
+
+.kg-bookmark-author {
+  display: inherit; }
+
+.kg-bookmark-publisher {
+  display: inherit; }
+
+.kg-bookmark-thumbnail {
   display: inherit; }
 
 /*# sourceMappingURL=main.css.map */

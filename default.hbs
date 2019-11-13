@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{lang}}">
-<head>
+<html lang="{{@site.lang}}">
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<head>
 
-    <title>{{meta_title}}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<title>{{meta_title}}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<link rel="stylesheet" type="text/css" href="{{asset "built/main.css"}}" />
 		<link href="https://fonts.googleapis.com/css?family=Alegreya:400,400i,700,800,800i,900,900i" rel="stylesheet">
@@ -18,18 +19,20 @@
 
 		{{ghost_head}}
 	</head>
+
 	<body class="{{body_class}}">
 
 		<main>
 			{{{body}}}
 		</main>
 
-    <!-- https://m.do.co/c/ce430d015ec4 -->
+		<!-- https://m.do.co/c/ce430d015ec4 -->
 
-    {{> "footer"}}
+		{{> "footer"}}
 
 		{{ghost_foot}}
-    <script src="https://unpkg.com/@tryghost/content-api@1.0.0/umd/content-api.min.js"></script>
+		<script src="https://unpkg.com/@tryghost/content-api@1.0.0/umd/content-api.min.js"></script>
 		<script type="text/javascript" src="{{asset "built/main.min.js"}}"></script>
 	</body>
+
 </html>
