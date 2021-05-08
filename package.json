@@ -53,7 +53,7 @@
     "@tryghost/content-api": "^1.0.0",
     "autoprefixer": "^9.4.7",
     "gscan": "^2.0.0",
-    "handlebars": "^4.1.0",
+    "handlebars": "^4.7.7",
     "html2plaintext": "^2.1.2",
     "lunr": "^2.3.5",
     "node-sass": "^4.11.0",
